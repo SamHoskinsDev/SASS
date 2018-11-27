@@ -1,0 +1,17 @@
+@function px-to-percentage($target, $context: $max-width) {
+  @return ($target / $context) * 100%;
+}
+
+@function px-to-em($target, $context: $max-width) {
+  @return ($target / $context) * 1em;
+}
+
+@function px-to-rem($target, $context: $max-width) {
+  @return ($target / $context) * 1rem;
+}
+
+@function per-line($item-count) {
+  $gutter-percentage: px-to-percentage($gutter) * 2;
+  $gutter-total: $gutter-percentage * $item-count;
+  @return (100% / $item-count) - $gutter-total;
+}

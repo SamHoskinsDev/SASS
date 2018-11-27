@@ -1,0 +1,70 @@
+// Center containers
+@mixin center($width: 90%) {
+  width: $width;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Rounded corners
+@mixin rounded($radius: 0.5em, $border: null) {
+  border-radius: $radius;
+  border: $border;
+  @content;
+}
+
+// Flex container
+@mixin flexed($type: flex, $direction: null, $wrap: null, $justify: null) {
+  display: $type;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+}
+
+// Media queries
+@mixin mediaquery($breakpoint) {
+  $matching-breakpoint: map-get($breakpoints, $breakpoint);
+  $small-breakpoint: map-get($breakpoints, "s");
+
+  @if ($matching-breakpoint == null) {
+    @warn "`#{$breakpoint} is not a valid breakpoint name`";
+  } @else if ($matching-breakpoint < $small-breakpoint) {
+    @media (max-width: $matching-breakpoint) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $matching-breakpoint) {
+      @content;
+    }
+  }
+}
+
+// Theme
+@mixin theme($theme) {
+  @each $element, $color in $theme {
+    &--#{$element} {
+      background-color: $color;
+    }
+  }
+}
+
+// Themes
+@mixin themes($themes-map) {
+  @each $theme-name, $theme-values in $themes-map {
+    .theme--#{$theme-name} & {
+      @include theme($theme-values);
+    }
+  }
+}
+
+// The below achieves the same as "Theme" and "Themes" above
+// Themes
+// @mixin themes($themes-map) {
+//   @each $theme-name, $theme-values in $themes-map {
+//     @each $element, $color in $theme-values {
+//       .theme--#{$theme-name} &--#{$element} {
+//         background-color: $color;
+//       }
+//     }
+//   }
+// }

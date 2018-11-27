@@ -1,0 +1,13 @@
+.button {
+  &--callout {
+    @extend %button;
+    margin: 5px;
+    background-color: $color--secondary;
+  }
+
+  &--info {
+    @extend %button;
+    margin: 5px;
+    background-color: $color--primary;
+  }
+}

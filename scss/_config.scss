@@ -1,0 +1,38 @@
+// =============
+// Global Config
+// =============
+
+// Font stacks
+$font-url--google: "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900";
+
+$font-family--primary: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family--secondary: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Font weights
+$font-weight--thin: 100;
+$font-weight--light: 300;
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+$font-weight--ultra-bold: 900;
+
+// Descriptive base colours
+$color--white: #ffffff;
+$color--black: #000000;
+$color--grey: #797e83;
+
+$color--fountain-blue: #52bab3;
+$color--emerald: #5ece7f;
+$color--sunglo: #e67478;
+$color--coral: #ff784f;
+$color--purple-majesty: #9279c3;
+$color--scooter: #39add1;
+
+// Color usage
+$color--primary: $color--fountain-blue;
+$color--secondary: $scooter;
+$color--accent: $color--emerald;
+$color--shadow: rgba($color--black, 0.2);
+
+// Text
+$base__font-size: 16px;
+$base__line-height: 24px;

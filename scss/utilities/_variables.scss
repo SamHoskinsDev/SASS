@@ -1,0 +1,47 @@
+// Colours
+$color--white: #fff;
+$color--black: #000;
+
+$color--primary: #278da4;
+$color--secondary: #b13c69;
+$color--accent: #eeea72;
+$color--shade: #eeeeee;
+$color--text: #343434;
+$color--background: #3acec2;
+$color--background-light: #009fe1;
+
+// Fonts
+$font-stack--primary: "Raleway", sans-serif;
+$font-stack--secondary: "Bree Serif", serif;
+
+// Layout
+$max-width: 1000px;
+$gutter: 10px;
+
+// Breakpoints
+$breakpoints: (
+  "xs": 575px,
+  "s": 576px,
+  "m": 768px,
+  "l": 992px
+);
+
+// Themes
+$themes: (
+  "dark": (
+    "red": #c0392b,
+    "orange": #f39c12,
+    "yellow": #f1c40f,
+    "green": #27ae60,
+    "blue": #2980b9,
+    "purple": #8e44ad
+  ),
+  "light": (
+    "red": #d98880,
+    "orange": #f8c471,
+    "yellow": #f7dc6f,
+    "green": #7dcea0,
+    "blue": #7fb3d5,
+    "purple": #bb8fce
+  )
+);

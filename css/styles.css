@@ -1,0 +1,196 @@
+.centered {
+  margin: 0 auto;
+  display: table; }
+
+.button--callout, .button--info {
+  font-size: 1.1em;
+  padding: 0.75em 1.5em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 0.5em; }
+  .button--callout:hover, .button--info:hover {
+    color: white;
+    opacity: 0.8; }
+  .button--callout:active, .button--info:active {
+    opacity: initial; }
+
+h1,
+h2 {
+  font-family: "Bree Serif", serif; }
+
+header h1 {
+  color: #278da4; }
+
+header p {
+  color: #eeea72; }
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap; }
+
+.inner {
+  padding: 0.5em 1em; }
+
+.intro {
+  margin: auto;
+  padding: 1em 1em 3em; }
+  .intro p {
+    font-size: 1.2em; }
+  @media (min-width: 992px) {
+    .intro {
+      width: 45%; } }
+
+header {
+  padding: 20px;
+  background: linear-gradient(#009fe1, #3acec2); }
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  color: #343434; }
+
+footer {
+  background: #eeeeee; }
+
+.card {
+  margin: 10px;
+  padding: 1.5em 1em;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  border: 1px solid #b13c69;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-basis: 98%; }
+  @media (min-width: 576px) {
+    .card {
+      flex-basis: 46%; } }
+  @media (min-width: 768px) {
+    .card {
+      flex-basis: 27.3333333333%; } }
+  @media (min-width: 992px) {
+    .card {
+      flex-basis: 17%; } }
+  .card h3 {
+    margin: 0.35em 0 0;
+    color: #278da4;
+    line-height: 1.25; }
+  .card a {
+    color: #278da4;
+    text-decoration: none; }
+    .card a:hover {
+      color: #b13c69; }
+  .theme--dark .card--red {
+    background-color: #c0392b; }
+  .theme--dark .card--orange {
+    background-color: #f39c12; }
+  .theme--dark .card--yellow {
+    background-color: #f1c40f; }
+  .theme--dark .card--green {
+    background-color: #27ae60; }
+  .theme--dark .card--blue {
+    background-color: #2980b9; }
+  .theme--dark .card--purple {
+    background-color: #8e44ad; }
+  .theme--light .card--red {
+    background-color: #d98880; }
+  .theme--light .card--orange {
+    background-color: #f8c471; }
+  .theme--light .card--yellow {
+    background-color: #f7dc6f; }
+  .theme--light .card--green {
+    background-color: #7dcea0; }
+  .theme--light .card--blue {
+    background-color: #7fb3d5; }
+  .theme--light .card--purple {
+    background-color: #bb8fce; }
+
+.main-nav {
+  margin: 1em auto;
+  padding: 0;
+  display: table; }
+  .main-nav li {
+    margin: 0 0.65em;
+    display: inline-block; }
+  .main-nav a {
+    padding: 0.5em;
+    font-size: 0.85em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff; }
+    .main-nav a:hover {
+      color: #b13c69; }
+
+.button--callout {
+  margin: 5px;
+  background-color: #b13c69; }
+.button--info {
+  margin: 5px;
+  background-color: #278da4; }
+
+.image--featured {
+  width: 165px;
+  margin-top: 75px;
+  z-index: 100;
+  border: 4px solid white;
+  border-radius: 50%;
+  position: relative; }
+  @media (max-width: 575px) {
+    .image--featured {
+      display: none; } }
+
+.box-1 {
+  background-color: #ffa047;
+  padding-left: 1px; }
+
+.box-2 {
+  background-color: #ffde47;
+  padding-left: 2px; }
+
+.box-3 {
+  background-color: #e3ff47;
+  padding-left: 3px; }
+
+.box-4 {
+  background-color: #a6ff47;
+  padding-left: 4px; }
+
+.box-5 {
+  background-color: #68ff47;
+  padding-left: 5px; }
+
+.box-1 {
+  background-color: #ffa047;
+  padding-left: 1px; }
+
+.box-2 {
+  background-color: #ffde47;
+  padding-left: 2px; }
+
+.box-3 {
+  background-color: #e3ff47;
+  padding-left: 3px; }
+
+.box-4 {
+  background-color: #a6ff47;
+  padding-left: 4px; }
+
+.item--item1 {
+  background-image: url("images/item1.jpg"); }
+
+.item--item2 {
+  background-image: url("images/item2.jpg"); }
+
+.item--item3 {
+  background-image: url("images/item3.jpg"); }
+
+.item--item4 {
+  background-image: url("images/item4.jpg"); }
+
+.item--item5 {
+  background-image: url("images/item5.jpg"); }
+
+/*# sourceMappingURL=styles.css.map */

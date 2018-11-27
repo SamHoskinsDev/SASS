@@ -1,0 +1,38 @@
+.card {
+  margin: $gutter;
+  padding: 1.5em 1em;
+  box-sizing: border-box;
+  @include rounded($border: 1px solid $color--secondary);
+  @include flexed($direction: column);
+  flex: 1;
+  flex-basis: per-line(1);
+
+  @include mediaquery("s") {
+    flex-basis: per-line(2);
+  }
+
+  @include mediaquery("m") {
+    flex-basis: per-line(3);
+  }
+
+  @include mediaquery("l") {
+    flex-basis: per-line(4);
+  }
+
+  h3 {
+    margin: 0.35em 0 0;
+    color: $color--primary;
+    line-height: 1.25;
+  }
+
+  a {
+    color: $color--primary;
+    text-decoration: none;
+
+    &:hover {
+      color: $color--secondary;
+    }
+  }
+
+  @include themes($themes);
+}

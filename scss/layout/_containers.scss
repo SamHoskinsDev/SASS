@@ -1,0 +1,29 @@
+// Main content
+.main-content {
+  @include flexed($wrap: wrap);
+
+  @include mediaquery("m") {
+    //@include center(90%);
+  }
+}
+
+// Inner
+.inner {
+  padding: 0.5em 1em;
+}
+
+// Intro
+.intro {
+  margin: auto;
+  padding: 1em 1em 3em;
+  p {
+    font-size: 1.2em;
+  }
+  @include mediaquery("l") {
+    width: 45%;
+  }
+}
+
+.centered {
+  @extend %centered;
+}

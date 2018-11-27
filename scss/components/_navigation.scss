@@ -1,0 +1,22 @@
+.main-nav {
+  margin: 1em auto;
+  padding: 0;
+  display: table;
+
+  li {
+    margin: 0 0.65em;
+    display: inline-block;
+  }
+
+  a {
+    padding: 0.5em;
+    font-size: 0.85em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color--white;
+
+    &:hover {
+      color: $color--secondary;
+    }
+  }
+}
